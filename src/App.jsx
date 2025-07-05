@@ -5,7 +5,7 @@ import Profile from "./Components/Profile.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Components/Home.jsx";
 import Nav2 from "./Components/Nav2.jsx";
-import Whatsnew from "./Components/whatsnew.jsx";
+import Whatsnew from "./Components/Whatsnew.jsx";
 import About from "./Components/About.jsx";
 import M1Suits from "./Components/M1Suits.jsx";
 import M2Casuals from "./Components/M2Casuals.jsx";
@@ -196,7 +196,7 @@ function App() {
       path: "/*",
       element: (
         <>
-          <LostPage/>
+          <LostPage />
         </>
       ),
     },
@@ -209,7 +209,6 @@ function App() {
       >
         <Navbar />
         <RouterProvider router={router} />
-
         <Footer />
       </cartContext.Provider>
     </>
