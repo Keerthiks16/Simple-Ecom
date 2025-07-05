@@ -2,7 +2,7 @@
 
 # 🛍️ Simple E-Commerce Website
 
-This is a basic e-commerce web application built with **React** and **Vite**. The site features a homepage with carousels, product sections for men, women, and accessories, and a shopping cart system using React Context.
+This is my very first react project, a basic e-commerce web application built with **React** and **Vite**. The site features a homepage with carousels, product sections for men, women, and accessories, and a shopping cart system using React Context.
 
 ---
 
