@@ -1,0 +1,79 @@
+/* Ensure html and body take up full height */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.profile-container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to bottom right, #ffffff, #f0f0f0);
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.profile-pic {
+  margin-right: 20px;
+}
+
+.round-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile-info h2 {
+  margin: 0;
+  font-size: 2rem;
+  color: #333;
+}
+
+.profile-info p {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.profile-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 800px;
+  width: 100%;
+}
+.profile-btn {
+  color: black;
+  background-color: white;
+  width: 100%;
+  height: 70px;
+}
+.profile-list {
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .profile-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-pic {
+    margin-right: 0;
+    margin-bottom: 2px;
+  }
+}

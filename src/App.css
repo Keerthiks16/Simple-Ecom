@@ -1,0 +1,30 @@
+.title {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 600;
+  font-size: 40px;
+  margin-left: 15px;
+}
+.nav {
+  color: white;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.cards img {
+  height: 70%;
+  width: 100%;
+  margin: 4px;
+}
+.card {
+  flex: 0 1 calc(33.33% - 10px);
+  margin: 5px;
+  background-color: lightblue;
+  text-align: center;
+  padding: 20px;
+}
+.navul {
+  --bs-scroll-height: 100px;
+}

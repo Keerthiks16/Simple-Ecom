@@ -1,0 +1,23 @@
+.whatsnew-r1 {
+  height: 940px;
+  width: 2500px;
+  color: brown;
+}
+img {
+  margin: 1px;
+  padding: 1px;
+}
+.wn-img1 {
+  height: 240px;
+}
+.wn-img2 {
+  height: 240px;
+  width: 300px;
+  margin-left: 20px;
+}
+.wn-img3 {
+  width: 380px;
+}
+.wn-img4 {
+  width: 570px;
+}

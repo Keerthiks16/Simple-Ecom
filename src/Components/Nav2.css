@@ -1,0 +1,101 @@
+/* Navbar container styling */
+.navbar {
+  background-color: #333;
+  padding: 10px 20px;
+  width: 100%;
+  position: relative;
+}
+
+/* Unordered list for links */
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Links styling */
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 16px;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 2px solid transparent; /* Default unselected border */
+}
+
+/* Hover effect */
+.nav-links li a:hover {
+  background-color: #555;
+  border-radius: 4px;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Active (selected) link */
+.nav-links li a.active {
+  background-color: white;
+  color: black;
+  border-radius: 4px;
+  border-bottom: 2px solid #000000;
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3);
+  opacity: 1; /* Ensure the active tab is fully opaque */
+  transform: none; /* Remove hover scale effect on active tab */
+  /* Ensure active tab overrides hover styles */
+}
+
+/* Hover effect for inactive tabs */
+.nav-links li a:not(.active):hover {
+  background-color: #555;
+  border-radius: 4px;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Unselected tab subtle styling */
+.nav-links li a:not(.active) {
+  opacity: 0.8;
+}
+
+/* Responsive: Stay horizontal until screen width is 600px */
+@media (max-width: 600px) {
+  .nav-links {
+    display: none; /* Hide tabs by default in small screens */
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    z-index: 1;
+    padding: 10px;
+  }
+
+  /* Show nav links when the menu is toggled */
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+}
+
+/* Menu toggle button */
+.menu-toggle {
+  display: none;
+  background-color: #333;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Show the toggle button when the screen is small */
+@media (max-width: 600px) {
+  .menu-toggle {
+    display: block;
+  }
+}
